@@ -188,4 +188,31 @@ public class Print {
         }
         return chose;
     }
+    public void remove(Flight[] flights)
+    {
+        String flightId = "";
+        int flag = 0;
+        int index = 0;
+        System.out.println("Enter flightId you want delete");
+        System.out.printf(">>");
+        flightId = input.next();
+        for (int i = 0; i < flights.length; i++) {
+            if(flights[i].getFlightId().equals(flightId))
+            {
+                flag = 1;
+                index = i;
+                break;
+            }
+        }
+        if (flag ==1)
+        {
+            flights[index].setFlightId(null);
+            System.out.println("Delete is successfully");
+        }
+        else
+        {
+            System.out.println("Cant find this flightId!");
+        }
+
+    }
 }
