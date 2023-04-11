@@ -42,6 +42,53 @@ public class Utils {
         }
         users[count].setUsername(userStr);
     }
+    public int signing() {
+        String userStr;
+        String passStr;
+        int adminFlag = 0;
+        int index = 0;
+        int flag = 0;
+        while (true) {
+            System.out.printf("Username : ");
+            userStr = input.next();
+            if (userStr.equals("admin")) {
+                adminFlag = 1;
+                break;
+            } else {
+                for (int i = 0; i < users.length; i++) {
+                    if (users[i].getUsername()!= null && users[i].getUsername().equals(userStr)) {
+                        flag = 1;
+                        index = i;
+                        break;
+                    }
+
+                }
+            }
+            if (flag == 1 || adminFlag == 1)
+                break;
+            else
+                System.out.printf("Incorrect!\nTry again\n");
+
+        }
+
+        if (adminFlag == 1) {
+            while (true) {
+                System.out.printf("Password : ");
+                passStr = input.next();
+                if (passStr.equals("admin"))
+                    return 1;
+                System.out.printf("Incorrect\nTry again\n");
+            }
+        } else {
+            while (true) {
+                System.out.printf("Password : ");
+                passStr = input.next();
+                if (passStr.equals(users[index].getPassword()))
+                    return 2;
+                System.out.printf("Incorrect\nTry again\n");
+            }
+        }
+    }
     public void start()
     {
         newUsers();
@@ -51,6 +98,15 @@ public class Utils {
             switch (print.printSignMenu())
             {
                 case 1 :
+                    switch (signing())
+                    {
+                        case 1://Admin
+                            System.out.println("ADMIN");
+                            break;
+                        case 2://other
+                            System.out.println("OTHER");
+                            break;
+                    }
                     break;
                 case 2 ://sabte num
                     addUser(userCount);
