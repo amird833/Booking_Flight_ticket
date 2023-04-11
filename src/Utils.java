@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Utils {
+    public int mainIndex;
     Scanner input = new Scanner(System.in);
     Print print = new Print();
     User[] users = new User[20];
@@ -93,8 +94,10 @@ public class Utils {
             while (true) {
                 System.out.print("Password : ");
                 passStr = input.next();
-                if (passStr.equals(users[index].getPassword()))
+                if (passStr.equals(users[index].getPassword())) {
+                    mainIndex = index;
                     return 2;
+                }
                 System.out.print("Incorrect\nTry again\n");
             }
         }
@@ -134,8 +137,13 @@ public class Utils {
                         }
                         case 2 ->//other
                         {
+                            System.out.printf("Welcome %s",users[mainIndex].getUsername());
                             switch (print.printOtherOption()) {
                                 case 1:
+                                    System.out.printf("Old password : %s\n",users[mainIndex].getPassword());
+                                    System.out.printf("New password : ");
+                                    users[mainIndex].setPassword(input.next());
+                                    System.out.println("Change successfully");
                                     break;
                                 case 2:
                                     break;
