@@ -49,7 +49,7 @@ public class Utils {
         int index = 0;
         int flag = 0;
         while (true) {
-            System.out.printf("Username : ");
+            System.out.print("Username : ");
             userStr = input.next();
             if (userStr.equals("admin")) {
                 adminFlag = 1;
@@ -67,25 +67,25 @@ public class Utils {
             if (flag == 1 || adminFlag == 1)
                 break;
             else
-                System.out.printf("Incorrect!\nTry again\n");
+                System.out.print("Incorrect!\nTry again\n");
 
         }
 
         if (adminFlag == 1) {
             while (true) {
-                System.out.printf("Password : ");
+                System.out.print("Password : ");
                 passStr = input.next();
                 if (passStr.equals("admin"))
                     return 1;
-                System.out.printf("Incorrect\nTry again\n");
+                System.out.print("Incorrect\nTry again\n");
             }
         } else {
             while (true) {
-                System.out.printf("Password : ");
+                System.out.print("Password : ");
                 passStr = input.next();
                 if (passStr.equals(users[index].getPassword()))
                     return 2;
-                System.out.printf("Incorrect\nTry again\n");
+                System.out.print("Incorrect\nTry again\n");
             }
         }
     }
@@ -95,25 +95,21 @@ public class Utils {
         int userCount = 0;
         while (true)
         {
-            switch (print.printSignMenu())
-            {
-                case 1 :
-                    switch (signing())
-                    {
-                        case 1://Admin
-                            System.out.println("ADMIN");
-                            break;
-                        case 2://other
-                            System.out.println("OTHER");
-                            break;
+            switch (print.printSignMenu()) {
+                case 1 -> {
+                    switch (signing()) {
+                        case 1 ->//Admin
+                                System.out.println("ADMIN");
+                        case 2 ->//other
+                                System.out.println("OTHER");
                     }
-                    break;
-                case 2 ://sabte num
+                }
+                case 2 -> {//sabte num
                     addUser(userCount);
                     System.out.print("Password : ");
                     users[userCount].setPassword(input.next());
                     userCount++;
-                    break;
+                }
             }
         }
     }

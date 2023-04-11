@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="add addUser methods for give username and pass ,but get a null exception :(">
-      <change beforePath="$PROJECT_DIR$/src/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Methods.java" afterDir="false" />
-    </list>
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="add signing method for sign in" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681190643350</updated>
       <workItem from="1681190644343" duration="145000" />
-      <workItem from="1681190829869" duration="3836000" />
+      <workItem from="1681190829869" duration="4487000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1681190675853</created>
@@ -154,7 +152,35 @@
       <option name="project" value="LOCAL" />
       <updated>1681194532760</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fix bug with newUsers . forgot new array">
+      <created>1681194767119</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1681194767119</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fix warning">
+      <created>1681194814767</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1681194814767</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Rename Methods to Utils">
+      <created>1681195113708</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1681195113708</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add signing method for sign in">
+      <created>1681195342946</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1681195342946</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +198,10 @@
     <MESSAGE value="add username and password to User class" />
     <MESSAGE value="add getter and setter to User class" />
     <MESSAGE value="add addUser methods for give username and pass ,but get a null exception :(" />
-    <option name="LAST_COMMIT_MESSAGE" value="add addUser methods for give username and pass ,but get a null exception :(" />
+    <MESSAGE value="Fix bug with newUsers . forgot new array" />
+    <MESSAGE value="Fix warning" />
+    <MESSAGE value="Rename Methods to Utils" />
+    <MESSAGE value="add signing method for sign in" />
+    <option name="LAST_COMMIT_MESSAGE" value="add signing method for sign in" />
   </component>
 </project>
