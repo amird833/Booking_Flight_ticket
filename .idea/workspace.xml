@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="update printSignMenu methods for dosent access incorrect choice" />
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="add User class">
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681190643350</updated>
       <workItem from="1681190644343" duration="145000" />
-      <workItem from="1681190829869" duration="1744000" />
+      <workItem from="1681190829869" duration="2065000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1681190675853</created>
@@ -102,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681192572620</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update printSignMenu methods for dosent access incorrect choice">
+      <created>1681192805863</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681192805863</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add User class">
+      <created>1681192857813</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681192857813</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +132,7 @@
     <MESSAGE value="add Methods object and finish the Main class" />
     <MESSAGE value="add main methods and finish first switch case" />
     <MESSAGE value="update printSignMenu methods for dosent access incorrect choice" />
-    <option name="LAST_COMMIT_MESSAGE" value="update printSignMenu methods for dosent access incorrect choice" />
+    <MESSAGE value="add User class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add User class" />
   </component>
 </project>
