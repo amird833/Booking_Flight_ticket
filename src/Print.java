@@ -387,10 +387,39 @@ public class Print {
             System.out.println("You dont have enugh many :(");
 
         }
+        else if (flights[indexFlight].getSeats() > 0)
+        {
+            System.out.println("This flight dont have any seats");
+        }
         else
         {
             user.setVault(user.getVault() - flights[indexFlight].getPrice());
             user.ticketFlightId[indexUser]=flight;
+            flights[indexFlight].setSeats(flights[indexFlight].getSeats()-1);
         }
+    }
+    public void cancellBook(Flight[] flights , User user)
+    {
+        int flag = 0;
+        String flightid;
+        System.out.println("You have these tickets ");
+        for (int i = 0; i < user.ticketFlightId.length; i++) {
+            if (user.ticketFlightId[i] != null)
+            {
+                for (int j = 0; j < flights.length; j++) {
+                    {
+                        if (flights[j].getFlightId() != null && flights[j].getFlightId().equals(user.ticketFlightId[i]))
+                        {
+                            System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flights[j].getFlightId(), flights[j].getOrigin(), flights[j].getDestination(), flights[j].getDate(), flights[j].getTime(), flights[j].getPrice(), flights[j].getSeats());
+                        }
+                    }
+
+                }
+            }
+
+        }
+        System.out.printf("Which ticket you eant delete , Enter flightId :  ");
+        flightid = input.next();
+
     }
 }
