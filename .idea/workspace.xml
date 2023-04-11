@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="finish addAdmin">
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="add addDefultFly methode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Print.java" afterDir="false" />
     </list>
@@ -57,7 +57,7 @@
       <workItem from="1681190644343" duration="145000" />
       <workItem from="1681190829869" duration="9835000" />
       <workItem from="1681211205902" duration="209000" />
-      <workItem from="1681227717098" duration="2435000" />
+      <workItem from="1681227717098" duration="5465000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1681190675853</created>
@@ -283,7 +283,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681229115248</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="add 3 flight information">
+      <created>1681230762735</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1681230762735</updated>
+    </task>
+    <task id="LOCAL-00034" summary="add addDefultFly methode">
+      <created>1681230879040</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1681230879040</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +315,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Start" />
     <MESSAGE value="Class Methods for write main program codes" />
     <MESSAGE value="Class Print for write print menu codes" />
     <MESSAGE value="add printSignMenu methods for print first menu" />
@@ -325,6 +338,8 @@
     <MESSAGE value="add newFlight for new array and fix bug" />
     <MESSAGE value="fix bug for find null cell of flights and add to this cell" />
     <MESSAGE value="finish addAdmin" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish addAdmin" />
+    <MESSAGE value="add 3 flight information" />
+    <MESSAGE value="add addDefultFly methode" />
+    <option name="LAST_COMMIT_MESSAGE" value="add addDefultFly methode" />
   </component>
 </project>

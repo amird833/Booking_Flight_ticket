@@ -106,4 +106,86 @@ public class Print {
         System.out.print("Seats : ");
         flights[index].setSeats(input.nextInt());
     }
+    public void updateFlight(Flight[] flights)
+    {
+        String flightId;
+        flightId = input.next();
+        int index =0;
+        int flag = 0;
+        for (int i = 0; i < flights.length; i++) {
+            if(flights[i].getFlightId().equals(flightId))
+            {
+                flag = 1;
+                index = i;
+                break;
+            }
+        }
+        if (flag ==1)
+        {
+            switch (printPartOfFlightInformation())
+            {
+                case 1 :
+                    System.out.printf("Old Origin : %s",flights[index].getOrigin());
+                    System.out.printf("New Origin : ");
+                    flights[index].setOrigin(input.next());
+                    System.out.println("Change is successfully");
+                    break;
+                case 2:
+                    System.out.printf("Old Destination : %s",flights[index].getDestination());
+                    System.out.printf("New Destination : ");
+                    flights[index].setDestination(input.next());
+                    System.out.println("Change is successfully");
+                    break;
+                case 3 :
+                    System.out.printf("Old Date : %s",flights[index].getDate());
+                    System.out.printf("New Date : ");
+                    flights[index].setDate(input.next());
+                    System.out.println("Change is successfully");
+                    break;
+                case 4:
+                    System.out.printf("Old Time : %s",flights[index].getTime());
+                    System.out.printf("New Time : ");
+                    flights[index].setTime(input.next());
+                    System.out.println("Change is successfully");
+                    break;
+                case 5:
+                    System.out.printf("Old Price : %d",flights[index].getPrice());
+                    System.out.printf("New Price : ");
+                    flights[index].setPrice(input.nextInt());
+                    System.out.println("Change is successfully");
+                    break;
+                case 6:
+                    System.out.printf("Old Seats : %d",flights[index].getSeats());
+                    System.out.printf("New Seats : ");
+                    flights[index].setSeats(input.nextInt());
+                    System.out.println("Change is successfully");
+                    break;
+            }
+
+        }
+        else
+        {
+            System.out.println("Cant find this flight Id");
+        }
+    }
+    public int printPartOfFlightInformation()
+    {
+        int chose = 2 ;
+        System.out.println("Select number");
+        System.out.println("1- Origin");
+        System.out.println("2- Destination");
+        System.out.println("3- Date");
+        System.out.println("4- Time");
+        System.out.println("5- Price");
+        System.out.println("6- Seats");
+        System.out.printf(">>");
+        chose = input.nextInt();
+        while (chose >6 || chose < 1 )
+        {
+            System.out.println("Try again!" );
+            System.out.printf(">>");
+            chose=input.nextInt();
+        }
+        return chose;
+    }
 }
