@@ -245,4 +245,24 @@ public class Print {
         }
         return chose;
     }
+    public int searchFlight()
+    {
+        int chose ;
+        System.out.println("1- FlightId");
+        System.out.println("2- Origin");
+        System.out.println("3- Destination");
+        System.out.println("4- Date");
+        System.out.println("5- Time");
+        System.out.println("6- Price");
+        System.out.println("7- Seats");
+        System.out.printf(">>");
+        chose = input.nextInt();
+        while (chose >7 || chose < 1 )
+        {
+            System.out.println("Try again!" );
+            System.out.printf(">>");
+            chose=input.nextInt();
+        }
+        return chose;
+    }
 }

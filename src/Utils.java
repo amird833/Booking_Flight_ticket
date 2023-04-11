@@ -146,6 +146,25 @@ public class Utils {
                                     System.out.println("Change successfully");
                                     break;
                                 case 2:
+                                {
+                                    switch (print.searchFlight())
+                                    {
+                                        case 1:
+                                            break;
+                                        case 2:
+                                            break;
+                                        case 3:
+                                            break;
+                                        case 4:
+                                            break;
+                                        case 5:
+                                            break;
+                                        case 6:
+                                            break;
+                                        case 7:
+                                            break;
+                                    }
+                                }
                                     break;
                                 case 3:
                                     break;
