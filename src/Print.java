@@ -197,7 +197,7 @@ public class Print {
         System.out.printf(">>");
         flightId = input.next();
         for (int i = 0; i < flights.length; i++) {
-            if(flights[i].getFlightId().equals(flightId))
+            if(flights[i].getFlightId()!=null && flights[i].getFlightId().equals(flightId))
             {
                 flag = 1;
                 index = i;
