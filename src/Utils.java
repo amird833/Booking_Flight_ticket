@@ -103,6 +103,7 @@ public class Utils {
     {
         newUsers();
         newFlight();
+        print.addDefultFly(flights);
         int userCount = 0;
         while (true)
         {
