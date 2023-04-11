@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="fix bug for find null cell of flights and add to this cell">
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="finish addAdmin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Print.java" afterDir="false" />
     </list>
@@ -57,7 +57,7 @@
       <workItem from="1681190644343" duration="145000" />
       <workItem from="1681190829869" duration="9835000" />
       <workItem from="1681211205902" duration="209000" />
-      <workItem from="1681227717098" duration="1096000" />
+      <workItem from="1681227717098" duration="2435000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1681190675853</created>
@@ -276,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681200181476</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="finish addAdmin">
+      <created>1681229115248</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1681229115248</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +324,7 @@
     <MESSAGE value="add FlightId to addAdmin methode" />
     <MESSAGE value="add newFlight for new array and fix bug" />
     <MESSAGE value="fix bug for find null cell of flights and add to this cell" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug for find null cell of flights and add to this cell" />
+    <MESSAGE value="finish addAdmin" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish addAdmin" />
   </component>
 </project>
