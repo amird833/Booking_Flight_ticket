@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Methods {
+public class Utils {
     Scanner input = new Scanner(System.in);
     Print print = new Print();
     User[] users = new User[20];
