@@ -68,5 +68,17 @@ public class Print {
             }
 
         }
+        System.out.print("Origin : ");
+        flights[index].setOrigin(input.next());
+        System.out.print("Destination : ");
+        flights[index].setDestination(input.next());
+        System.out.print("Date : ");
+        flights[index].setDate(input.next());
+        System.out.print("Time : ");
+        flights[index].setTime(input.next());
+        System.out.print("Price : ");
+        flights[index].setPrice(input.nextInt());
+        System.out.print("Seats : ");
+        flights[index].setSeats(input.nextInt());
     }
 }
