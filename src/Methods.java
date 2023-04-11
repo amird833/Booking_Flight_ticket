@@ -8,7 +8,7 @@ public class Methods {
             {
                 case 1 :
                     break;
-                case 2 :
+                case 2 ://sabte num
                     break;
             }
         }
