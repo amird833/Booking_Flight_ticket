@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="add signing method for sign in" />
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="add switch case of admin" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681190643350</updated>
       <workItem from="1681190644343" duration="145000" />
-      <workItem from="1681190829869" duration="4487000" />
+      <workItem from="1681190829869" duration="6062000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1681190675853</created>
@@ -180,11 +180,50 @@
       <option name="project" value="LOCAL" />
       <updated>1681195342946</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Fix warning">
+      <created>1681195520494</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1681195520494</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Fix warning">
+      <created>1681195772988</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1681195772988</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add printAdminOption methode to Print class">
+      <created>1681196142977</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1681196142977</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add switch case of admin">
+      <created>1681196929827</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1681196929827</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start" />
@@ -199,9 +238,11 @@
     <MESSAGE value="add getter and setter to User class" />
     <MESSAGE value="add addUser methods for give username and pass ,but get a null exception :(" />
     <MESSAGE value="Fix bug with newUsers . forgot new array" />
-    <MESSAGE value="Fix warning" />
     <MESSAGE value="Rename Methods to Utils" />
     <MESSAGE value="add signing method for sign in" />
-    <option name="LAST_COMMIT_MESSAGE" value="add signing method for sign in" />
+    <MESSAGE value="Fix warning" />
+    <MESSAGE value="add printAdminOption methode to Print class" />
+    <MESSAGE value="add switch case of admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="add switch case of admin" />
   </component>
 </project>

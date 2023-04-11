@@ -109,7 +109,6 @@ public class Utils {
                                         System.out.println("Remove");
                                 case 4 ->//Flight schedulse
                                         System.out.println("Flight schedulse");
-                                default -> System.out.println("fuck");
                             }
                         }
                         case 2 ->//other
