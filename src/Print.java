@@ -277,4 +277,15 @@ public class Print {
         }
     }
 
+    public void originSort(Flight[] flights)
+    {
+        String str;
+        System.out.print("Enter Origin :");
+        str = input.next();
+        for (int i = 0; i < flights.length; i++) {
+            if(flights[i].getFlightId() != null && flights[i].getOrigin().equals(str))
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
+
+        }
+    }
 }

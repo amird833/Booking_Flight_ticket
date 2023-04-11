@@ -153,6 +153,7 @@ public class Utils {
                                             print.flightIdSort(flights);
                                             break;
                                         case 2:
+                                            print.originSort(flights);
                                             break;
                                         case 3:
                                             break;
