@@ -220,7 +220,7 @@ public class Print {
         for (int i = 0; i < flights.length; i++) {
             if (flights[i].getFlightId() != null)
             {
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
             }
         }
     }

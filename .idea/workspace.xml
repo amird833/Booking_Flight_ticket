@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="add addDefultFly methode">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Print.java" afterDir="false" />
-    </list>
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="add printFlight" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +54,7 @@
       <workItem from="1681190644343" duration="145000" />
       <workItem from="1681190829869" duration="9835000" />
       <workItem from="1681211205902" duration="209000" />
-      <workItem from="1681227717098" duration="5465000" />
+      <workItem from="1681227717098" duration="7038000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1681190675853</created>
@@ -297,7 +294,49 @@
       <option name="project" value="LOCAL" />
       <updated>1681230879040</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="add update methode">
+      <created>1681233477258</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1681233477258</updated>
+    </task>
+    <task id="LOCAL-00036" summary="add update methode">
+      <created>1681233713665</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1681233713665</updated>
+    </task>
+    <task id="LOCAL-00037" summary="add Remove methode">
+      <created>1681233970324</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1681233970324</updated>
+    </task>
+    <task id="LOCAL-00038" summary="add Remove methode">
+      <created>1681234536970</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1681234536970</updated>
+    </task>
+    <task id="LOCAL-00039" summary="add printFlight">
+      <created>1681234882647</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1681234882647</updated>
+    </task>
+    <task id="LOCAL-00040" summary="add printFlight">
+      <created>1681234912362</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1681234912362</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,9 +354,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Class Methods for write main program codes" />
-    <MESSAGE value="Class Print for write print menu codes" />
-    <MESSAGE value="add printSignMenu methods for print first menu" />
     <MESSAGE value="add Methods object and finish the Main class" />
     <MESSAGE value="add main methods and finish first switch case" />
     <MESSAGE value="update printSignMenu methods for dosent access incorrect choice" />
@@ -340,6 +376,9 @@
     <MESSAGE value="finish addAdmin" />
     <MESSAGE value="add 3 flight information" />
     <MESSAGE value="add addDefultFly methode" />
-    <option name="LAST_COMMIT_MESSAGE" value="add addDefultFly methode" />
+    <MESSAGE value="add update methode" />
+    <MESSAGE value="add Remove methode" />
+    <MESSAGE value="add printFlight" />
+    <option name="LAST_COMMIT_MESSAGE" value="add printFlight" />
   </component>
 </project>
