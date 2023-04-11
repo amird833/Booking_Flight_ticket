@@ -1,6 +1,15 @@
 public class User {
     private String username;
     private String password;
+    private int vault;
+
+    public int getVault() {
+        return vault;
+    }
+
+    public void setVault(int vault) {
+        this.vault = vault;
+    }
 
     public String getUsername() {
         return username;
