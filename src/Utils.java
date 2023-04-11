@@ -99,7 +99,19 @@ public class Utils {
                 case 1 -> {
                     switch (signing()) {
                         case 1 ->//Admin
-                                System.out.println("ADMIN");
+                        {
+                            switch (print.printAdminOption()) {
+                                case 1 ->// Add
+                                        System.out.println("Add");
+                                case 2 ->//Update
+                                        System.out.println("Update");
+                                case 3 ->//Remove
+                                        System.out.println("Remove");
+                                case 4 ->//Flight schedulse
+                                        System.out.println("Flight schedulse");
+                                default -> System.out.println("fuck");
+                            }
+                        }
                         case 2 ->//other
                                 System.out.println("OTHER");
                     }
