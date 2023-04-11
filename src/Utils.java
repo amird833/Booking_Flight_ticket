@@ -118,7 +118,7 @@ public class Utils {
                                     print.addAdmin(flights);
 
                                 case 2 ->//Update
-                                        System.out.println("Update");
+                                    print.updateFlight(flights);
                                 case 3 ->//Remove
                                         System.out.println("Remove");
                                 case 4 ->//Flight schedulse
