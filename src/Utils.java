@@ -150,6 +150,7 @@ public class Utils {
                                     switch (print.searchFlight())
                                     {
                                         case 1:
+                                            print.flightIdSort(flights);
                                             break;
                                         case 2:
                                             break;
