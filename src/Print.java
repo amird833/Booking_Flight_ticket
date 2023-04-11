@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Print {
     Scanner input = new Scanner(System.in);
+    Flight[] flights = new Flight[20];
     public int printSignMenu()
     {
         int chose;
@@ -34,5 +35,32 @@ public class Print {
             chose = input.nextInt();
         }
         return chose;
+    }
+    public void addAdmin(int count)
+    {
+        String str="";
+        int flag =0;
+        System.out.print("FlightId : ");
+        while (true) {
+            str = input.next();
+            for (int i = 0; i < flights.length; i++) {
+                if (flights[i].getFlightId().equals(str)) {
+                    flag = 1;
+                    break;
+                }
+            }
+            if (flag ==1 )
+            {
+                System.out.println("Incorrect!");
+                System.out.println("Try again");
+                flag = 0;
+            }
+            else
+            {
+                flights[count].setFlightId(str);
+                break;
+            }
+
+        }
     }
 }
