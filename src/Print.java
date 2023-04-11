@@ -401,6 +401,7 @@ public class Print {
     public void cancellBook(Flight[] flights , User user)
     {
         int flag = 0;
+
         String flightid;
         System.out.println("You have these tickets ");
         for (int i = 0; i < user.ticketFlightId.length; i++) {
