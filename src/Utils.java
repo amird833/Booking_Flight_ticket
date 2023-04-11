@@ -4,6 +4,16 @@ public class Utils {
     Scanner input = new Scanner(System.in);
     Print print = new Print();
     User[] users = new User[20];
+    Flight[] flights = new Flight[20];
+
+
+    public void newFlight()
+    {
+        for (int i = 0; i < flights.length; i++) {
+            flights[i]=new Flight();
+        }
+    }
+
     public void newUsers()
     {
         for (int i = 0; i < users.length; i++) {
@@ -93,6 +103,7 @@ public class Utils {
     {
         newUsers();
         int userCount = 0;
+        int flightCount = 0;
         while (true)
         {
             switch (print.printSignMenu()) {
@@ -102,7 +113,10 @@ public class Utils {
                         {
                             switch (print.printAdminOption()) {
                                 case 1 ->// Add
-                                        System.out.println("Add");
+                                {
+                                    print.addAdmin(flightCount,flights);
+                                    flightCount += 1;
+                                }
                                 case 2 ->//Update
                                         System.out.println("Update");
                                 case 3 ->//Remove

@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Print {
     Scanner input = new Scanner(System.in);
-    Flight[] flights = new Flight[20];
     public int printSignMenu()
     {
         int chose;
@@ -36,7 +35,8 @@ public class Print {
         }
         return chose;
     }
-    public void addAdmin(int count)
+
+    public void addAdmin(int count,Flight[] flights)
     {
         String str="";
         int flag =0;
