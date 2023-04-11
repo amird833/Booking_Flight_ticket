@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="Class Print for write print menu codes">
-      <change beforePath="$PROJECT_DIR$/src/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Print.java" afterDir="false" />
-    </list>
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="update printSignMenu methods for dosent access incorrect choice" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681190643350</updated>
       <workItem from="1681190644343" duration="145000" />
-      <workItem from="1681190829869" duration="713000" />
+      <workItem from="1681190829869" duration="1744000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1681190675853</created>
@@ -76,7 +74,35 @@
       <option name="project" value="LOCAL" />
       <updated>1681190907345</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add printSignMenu methods for print first menu">
+      <created>1681191893255</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681191893255</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add Methods object and finish the Main class">
+      <created>1681192182781</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681192182781</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add main methods and finish first switch case">
+      <created>1681192300148</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681192300148</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update printSignMenu methods for dosent access incorrect choice">
+      <created>1681192572620</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681192572620</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +112,10 @@
     <MESSAGE value="Start" />
     <MESSAGE value="Class Methods for write main program codes" />
     <MESSAGE value="Class Print for write print menu codes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Class Print for write print menu codes" />
+    <MESSAGE value="add printSignMenu methods for print first menu" />
+    <MESSAGE value="add Methods object and finish the Main class" />
+    <MESSAGE value="add main methods and finish first switch case" />
+    <MESSAGE value="update printSignMenu methods for dosent access incorrect choice" />
+    <option name="LAST_COMMIT_MESSAGE" value="update printSignMenu methods for dosent access incorrect choice" />
   </component>
 </project>
