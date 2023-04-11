@@ -122,7 +122,7 @@ public class Utils {
                                 case 3 ->//Remove
                                     print.remove(flights);
                                 case 4 ->//Flight schedulse
-                                        System.out.println("Flight schedulse");
+                                print.printFlight(flights);
                             }
                         }
                         case 2 ->//other
