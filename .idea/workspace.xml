@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="add newFlight for new array and fix bug" />
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="fix bug for find null cell of flights and add to this cell">
+      <change beforePath="$PROJECT_DIR$/src/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Print.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681190643350</updated>
       <workItem from="1681190644343" duration="145000" />
-      <workItem from="1681190829869" duration="8886000" />
+      <workItem from="1681190829869" duration="9228000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1681190675853</created>
@@ -257,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681199770985</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="fix bug for find null cell of flights and add to this cell">
+      <created>1681200045715</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1681200045715</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +307,7 @@
     <MESSAGE value="add option of flight to Flight class" />
     <MESSAGE value="add FlightId to addAdmin methode" />
     <MESSAGE value="add newFlight for new array and fix bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="add newFlight for new array and fix bug" />
+    <MESSAGE value="fix bug for find null cell of flights and add to this cell" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug for find null cell of flights and add to this cell" />
   </component>
 </project>

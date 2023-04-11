@@ -104,7 +104,6 @@ public class Utils {
         newUsers();
         newFlight();
         int userCount = 0;
-        int flightCount = 0;
         while (true)
         {
             switch (print.printSignMenu()) {
@@ -114,10 +113,9 @@ public class Utils {
                         {
                             switch (print.printAdminOption()) {
                                 case 1 ->// Add
-                                {
+
                                     print.addAdmin(flights);
-                                    flightCount += 1;
-                                }
+
                                 case 2 ->//Update
                                         System.out.println("Update");
                                 case 3 ->//Remove

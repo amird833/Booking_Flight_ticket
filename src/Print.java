@@ -38,7 +38,7 @@ public class Print {
 
     public void addAdmin(Flight[] flights)
     {
-        String str="";
+        String str;
         int flag =0;
         System.out.print("FlightId : ");
         int index=0;
@@ -49,8 +49,8 @@ public class Print {
         }
         while (true) {
             str = input.next();
-            for (int i = 0; i < flights.length; i++) {
-                if (flights[i].getFlightId() != null && flights[i].getFlightId().equals(str)) {
+            for (Flight flight : flights) {
+                if (flight.getFlightId() != null && flight.getFlightId().equals(str)) {
                     flag = 1;
                     break;
                 }
