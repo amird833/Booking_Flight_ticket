@@ -4,6 +4,13 @@ public class Methods {
     Scanner input = new Scanner(System.in);
     Print print = new Print();
     User[] users = new User[20];
+    public void newUsers()
+    {
+        for (int i = 0; i < users.length; i++) {
+            users[i]=new User();
+
+        }
+    }
     public void addUser(int count)
     {
         String userStr="";
@@ -37,6 +44,7 @@ public class Methods {
     }
     public void start()
     {
+        newUsers();
         int userCount = 0;
         while (true)
         {
