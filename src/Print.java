@@ -348,4 +348,49 @@ public class Print {
 
         }
     }
+    public void booking(Flight[] flights,User user) {
+        String flight;
+        int indexFlight = 0;
+        int indexUser=0;
+        int flag = 0;
+        System.out.printf("Enter flightId : ");
+        flight = input.next();
+        while (true) {
+            for (int i = 0; i < flights.length; i++) {
+                if (flights[i].getFlightId() != null && flights[i].getFlightId().equals(flight)) {
+                    flag = 1;
+                    indexFlight = i;
+                    break;
+                }
+
+            }
+            if (flag == 1) {
+                System.out.println("find this flight");
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flights[indexFlight].getFlightId(), flights[indexFlight].getOrigin(), flights[indexFlight].getDestination(), flights[indexFlight].getDate(), flights[indexFlight].getTime(), flights[indexFlight].getPrice(), flights[indexFlight].getSeats());
+
+                break;
+            } else {
+                System.out.println("Try again");
+                System.out.printf(">>");
+                flight = input.next();
+            }
+
+        }
+        for (int i = 0; i < user.ticketFlightId.length; i++) {
+            if (user.ticketFlightId[i] == null) {
+                indexUser = i;
+            }
+
+        }
+        if (user.getVault() < flights[indexFlight].getPrice())
+        {
+            System.out.println("You dont have enugh many :(");
+
+        }
+        else
+        {
+            user.setVault(user.getVault() - flights[indexFlight].getPrice());
+            user.ticketFlightId[indexUser]=flight;
+        }
+    }
 }

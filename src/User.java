@@ -2,6 +2,9 @@ public class User {
     private String username;
     private String password;
     private int vault;
+    public String[] ticketFlightId = new String[100];
+
+
 
     public int getVault() {
         return vault;

@@ -174,6 +174,7 @@ public class Utils {
                                 }
                                     break;
                                 case 3:
+                                    print.booking(flights,users[mainIndex]);
                                     break;
                                 case 4:
                                     break;
