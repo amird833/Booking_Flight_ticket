@@ -103,6 +103,7 @@ public class Utils {
     {
         newUsers();
         newFlight();
+        int exitFlag = 0;
         print.addDefultFly(flights);
         int userCount = 0;
         while (true)
@@ -112,17 +113,23 @@ public class Utils {
                     switch (signing()) {
                         case 1 ->//Admin
                         {
-                            switch (print.printAdminOption()) {
-                                case 1 ->// Add
+                            exitFlag =0;
+                            while(exitFlag == 0)
+                            {
+                                switch (print.printAdminOption()) {
+                                    case 0 ->
+                                        exitFlag = 1;
+                                    case 1 ->// Add
 
-                                    print.addAdmin(flights);
+                                            print.addAdmin(flights);
 
-                                case 2 ->//Update
-                                    print.updateFlight(flights);
-                                case 3 ->//Remove
-                                    print.remove(flights);
-                                case 4 ->//Flight schedulse
-                                print.printFlight(flights);
+                                    case 2 ->//Update
+                                            print.updateFlight(flights);
+                                    case 3 ->//Remove
+                                            print.remove(flights);
+                                    case 4 ->//Flight schedulse
+                                            print.printFlight(flights);
+                                }
                             }
                         }
                         case 2 ->//other
