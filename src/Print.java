@@ -12,7 +12,7 @@ public class Print {
         while (chose > 2 || chose < 1)
         {
             System.out.println("Try again!");
-            System.out.print(">>");
+            System.out.printf(">>");
             chose = input.nextInt();
         }
         return chose;
