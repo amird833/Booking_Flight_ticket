@@ -120,7 +120,7 @@ public class Utils {
                                 case 2 ->//Update
                                     print.updateFlight(flights);
                                 case 3 ->//Remove
-                                        System.out.println("Remove");
+                                    print.remove(flights);
                                 case 4 ->//Flight schedulse
                                         System.out.println("Flight schedulse");
                             }
