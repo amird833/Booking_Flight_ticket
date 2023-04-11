@@ -36,15 +36,21 @@ public class Print {
         return chose;
     }
 
-    public void addAdmin(int count,Flight[] flights)
+    public void addAdmin(Flight[] flights)
     {
         String str="";
         int flag =0;
         System.out.print("FlightId : ");
+        int index=0;
+        for (int i = 0; i < flights.length; i++) {
+            if (flights[i].getFlightId()==null)
+                index = i;
+
+        }
         while (true) {
             str = input.next();
             for (int i = 0; i < flights.length; i++) {
-                if (flights[i].getFlightId().equals(str)) {
+                if (flights[i].getFlightId() != null && flights[i].getFlightId().equals(str)) {
                     flag = 1;
                     break;
                 }
@@ -57,7 +63,7 @@ public class Print {
             }
             else
             {
-                flights[count].setFlightId(str);
+                flights[index].setFlightId(str);
                 break;
             }
 

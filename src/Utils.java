@@ -115,7 +115,7 @@ public class Utils {
                             switch (print.printAdminOption()) {
                                 case 1 ->// Add
                                 {
-                                    print.addAdmin(flightCount,flights);
+                                    print.addAdmin(flights);
                                     flightCount += 1;
                                 }
                                 case 2 ->//Update
