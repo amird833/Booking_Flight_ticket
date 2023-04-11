@@ -156,14 +156,19 @@ public class Utils {
                                             print.originSort(flights);
                                             break;
                                         case 3:
+                                            print.destinationSort(flights);
                                             break;
                                         case 4:
+                                            print.dateSort(flights);
                                             break;
                                         case 5:
+                                            print.timeSort(flights);
                                             break;
                                         case 6:
+                                            print.priceSort(flights);
                                             break;
                                         case 7:
+                                            print.seatsSort(flights);
                                             break;
                                     }
                                 }

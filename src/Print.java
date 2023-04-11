@@ -288,4 +288,64 @@ public class Print {
 
         }
     }
+
+    public void destinationSort(Flight[] flights)
+    {
+        String str;
+        System.out.print("Enter Destination :");
+        str = input.next();
+        for (int i = 0; i < flights.length; i++) {
+            if(flights[i].getFlightId() != null && flights[i].getDestination().equals(str))
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
+
+        }
+    }
+
+    public void dateSort(Flight[] flights)
+    {
+        String str;
+        System.out.print("Enter Date :");
+        str = input.next();
+        for (int i = 0; i < flights.length; i++) {
+            if(flights[i].getFlightId() != null && flights[i].getDate().equals(str))
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
+
+        }
+    }
+
+    public void timeSort(Flight[] flights)
+    {
+        String str;
+        System.out.print("Enter Time :");
+        str = input.next();
+        for (int i = 0; i < flights.length; i++) {
+            if(flights[i].getFlightId() != null && flights[i].getTime().equals(str))
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
+
+        }
+    }
+
+    public void priceSort(Flight[] flights)
+    {
+        int price;
+        System.out.print("Enter Price :");
+        price = input.nextInt();
+        for (int i = 0; i < flights.length; i++) {
+            if(flights[i].getFlightId() != null && flights[i].getPrice()==price)
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
+
+        }
+    }
+
+    public void seatsSort(Flight[] flights)
+    {
+        int seats;
+        System.out.print("Enter Seats :");
+        seats = input.nextInt();
+        for (int i = 0; i < flights.length; i++) {
+            if(flights[i].getFlightId() != null && flights[i].getSeats()==seats)
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
+
+        }
+    }
 }
