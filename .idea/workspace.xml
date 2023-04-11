@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="add switch case of admin" />
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="add newFlight for new array and fix bug">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681190643350</updated>
       <workItem from="1681190644343" duration="145000" />
-      <workItem from="1681190829869" duration="6062000" />
+      <workItem from="1681190829869" duration="8585000" />
     </task>
     <task id="LOCAL-00001" summary="Start">
       <created>1681190675853</created>
@@ -208,7 +210,49 @@
       <option name="project" value="LOCAL" />
       <updated>1681196929827</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="add switch case of admin">
+      <created>1681196991695</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1681196991695</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add vault to User class">
+      <created>1681197423414</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1681197423414</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add Flight class">
+      <created>1681197479176</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1681197479176</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add option of flight to Flight class">
+      <created>1681197823766</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1681197823766</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add FlightId to addAdmin methode">
+      <created>1681198935704</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1681198935704</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add newFlight for new array and fix bug">
+      <created>1681199472259</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1681199472259</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +287,11 @@
     <MESSAGE value="Fix warning" />
     <MESSAGE value="add printAdminOption methode to Print class" />
     <MESSAGE value="add switch case of admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="add switch case of admin" />
+    <MESSAGE value="add vault to User class" />
+    <MESSAGE value="add Flight class" />
+    <MESSAGE value="add option of flight to Flight class" />
+    <MESSAGE value="add FlightId to addAdmin methode" />
+    <MESSAGE value="add newFlight for new array and fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="add newFlight for new array and fix bug" />
   </component>
 </project>

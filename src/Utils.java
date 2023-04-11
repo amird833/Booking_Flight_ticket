@@ -102,6 +102,7 @@ public class Utils {
     public void start()
     {
         newUsers();
+        newFlight();
         int userCount = 0;
         int flightCount = 0;
         while (true)
