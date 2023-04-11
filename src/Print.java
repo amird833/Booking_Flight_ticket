@@ -170,7 +170,7 @@ public class Print {
     }
     public int printPartOfFlightInformation()
     {
-        int chose = 2 ;
+        int chose  ;
         System.out.println("Select number");
         System.out.println("1- Origin");
         System.out.println("2- Destination");
@@ -223,5 +223,26 @@ public class Print {
                 System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
             }
         }
+    }
+    public int printOtherOption()
+    {
+        int chose;
+        System.out.println("Select number");
+        System.out.println("1- Change password");
+        System.out.println("2- Search flight tickets");
+        System.out.println("3- Booking ticket");
+        System.out.println("4- Ticket cancellation");
+        System.out.println("5- Booked tickets");
+        System.out.println("6- Add charge");
+        System.out.println("0- Sign out");
+        System.out.printf(">>");
+        chose = input.nextInt();
+        while (chose >6 || chose < 0 )
+        {
+            System.out.println("Try again!" );
+            System.out.printf(">>");
+            chose=input.nextInt();
+        }
+        return chose;
     }
 }

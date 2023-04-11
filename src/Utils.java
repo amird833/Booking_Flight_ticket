@@ -133,7 +133,24 @@ public class Utils {
                             }
                         }
                         case 2 ->//other
-                                System.out.println("OTHER");
+                        {
+                            switch (print.printOtherOption()) {
+                                case 1:
+                                    break;
+                                case 2:
+                                    break;
+                                case 3:
+                                    break;
+                                case 4:
+                                    break;
+                                case 5:
+                                    break;
+                                case 6:
+                                    break;
+                                case 0:
+                                    break;
+                            }
+                        }
                     }
                 }
                 case 2 -> {//sabte num
