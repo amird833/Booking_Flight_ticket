@@ -4,7 +4,9 @@ public class User {
     private int vault;
     public String[] ticketFlightId = new String[100];
 
-
+    public User() {
+        vault = 0;
+    }
 
     public int getVault() {
         return vault;

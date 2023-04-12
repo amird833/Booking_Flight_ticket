@@ -105,6 +105,7 @@ public class Utils {
     private void charge()
     {
         int charge;
+        System.out.printf("Now you have %d ",users[mainIndex].getVault());
         System.out.println("Enter Your number you want charge : ");
         charge = input.nextInt();
         users[mainIndex].setVault(users[mainIndex].getVault()+charge);
