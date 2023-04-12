@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="add while for other switch case" />
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="add cunstructor to User class for initialize vault">
+      <change beforePath="$PROJECT_DIR$/src/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,14 +66,7 @@
       <workItem from="1681244140884" duration="22000" />
       <workItem from="1681244841541" duration="74000" />
       <workItem from="1681294493468" duration="188000" />
-      <workItem from="1681294851809" duration="4173000" />
-    </task>
-    <task id="LOCAL-00013" summary="add getter and setter to User class">
-      <created>1681194418048</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1681194418048</updated>
+      <workItem from="1681294851809" duration="4614000" />
     </task>
     <task id="LOCAL-00014" summary="add addUser methods for give username and pass ,but get a null exception :(">
       <created>1681194532760</created>
@@ -409,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681299056193</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="add cunstructor to User class for initialize vault">
+      <created>1681299311664</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1681299311664</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +441,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add option of flight to Flight class" />
     <MESSAGE value="add FlightId to addAdmin methode" />
     <MESSAGE value="add newFlight for new array and fix bug" />
     <MESSAGE value="fix bug for find null cell of flights and add to this cell" />
@@ -464,6 +465,7 @@
     <MESSAGE value="add and finish charge" />
     <MESSAGE value="fix bookTicket part seat" />
     <MESSAGE value="add while for other switch case" />
-    <option name="LAST_COMMIT_MESSAGE" value="add while for other switch case" />
+    <MESSAGE value="add cunstructor to User class for initialize vault" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cunstructor to User class for initialize vault" />
   </component>
 </project>

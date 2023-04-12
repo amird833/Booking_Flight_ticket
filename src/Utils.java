@@ -181,7 +181,7 @@ public class Utils {
                                     case 6:
                                         charge();
                                         break;
-                                    case 7:
+                                    case 0:
                                         exitFlagOther = 0;
                                         break;
 
