@@ -122,44 +122,43 @@ public class Print {
         }
         if (flag ==1)
         {
-            switch (printPartOfFlightInformation())
-            {
-                case 1 :
-                    System.out.printf("Old Origin : %s",flights[index].getOrigin());
-                    System.out.printf("New Origin : ");
+            switch (printPartOfFlightInformation()) {
+                case 1 -> {
+                    System.out.printf("Old Origin : %s", flights[index].getOrigin());
+                    System.out.print("New Origin : ");
                     flights[index].setOrigin(input.next());
                     System.out.println("Change is successfully");
-                    break;
-                case 2:
-                    System.out.printf("Old Destination : %s",flights[index].getDestination());
-                    System.out.printf("New Destination : ");
+                }
+                case 2 -> {
+                    System.out.printf("Old Destination : %s", flights[index].getDestination());
+                    System.out.print("New Destination : ");
                     flights[index].setDestination(input.next());
                     System.out.println("Change is successfully");
-                    break;
-                case 3 :
-                    System.out.printf("Old Date : %s",flights[index].getDate());
-                    System.out.printf("New Date : ");
+                }
+                case 3 -> {
+                    System.out.printf("Old Date : %s", flights[index].getDate());
+                    System.out.print("New Date : ");
                     flights[index].setDate(input.next());
                     System.out.println("Change is successfully");
-                    break;
-                case 4:
-                    System.out.printf("Old Time : %s",flights[index].getTime());
-                    System.out.printf("New Time : ");
+                }
+                case 4 -> {
+                    System.out.printf("Old Time : %s", flights[index].getTime());
+                    System.out.print("New Time : ");
                     flights[index].setTime(input.next());
                     System.out.println("Change is successfully");
-                    break;
-                case 5:
-                    System.out.printf("Old Price : %d",flights[index].getPrice());
-                    System.out.printf("New Price : ");
+                }
+                case 5 -> {
+                    System.out.printf("Old Price : %d", flights[index].getPrice());
+                    System.out.print("New Price : ");
                     flights[index].setPrice(input.nextInt());
                     System.out.println("Change is successfully");
-                    break;
-                case 6:
-                    System.out.printf("Old Seats : %d",flights[index].getSeats());
-                    System.out.printf("New Seats : ");
+                }
+                case 6 -> {
+                    System.out.printf("Old Seats : %d", flights[index].getSeats());
+                    System.out.print("New Seats : ");
                     flights[index].setSeats(input.nextInt());
                     System.out.println("Change is successfully");
-                    break;
+                }
             }
 
         }
@@ -178,23 +177,23 @@ public class Print {
         System.out.println("4- Time");
         System.out.println("5- Price");
         System.out.println("6- Seats");
-        System.out.printf(">>");
+        System.out.print(">>");
         chose = input.nextInt();
         while (chose >6 || chose < 1 )
         {
             System.out.println("Try again!" );
-            System.out.printf(">>");
+            System.out.print(">>");
             chose=input.nextInt();
         }
         return chose;
     }
     public void remove(Flight[] flights)
     {
-        String flightId = "";
+        String flightId;
         int flag = 0;
         int index = 0;
         System.out.println("Enter flightId you want delete");
-        System.out.printf(">>");
+        System.out.print(">>");
         flightId = input.next();
         for (int i = 0; i < flights.length; i++) {
             if(flights[i].getFlightId()!=null && flights[i].getFlightId().equals(flightId))
@@ -217,10 +216,9 @@ public class Print {
     }
     public void printFlight(Flight[] flights)
     {
-        for (int i = 0; i < flights.length; i++) {
-            if (flights[i].getFlightId() != null)
-            {
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
+        for (Flight flight : flights) {
+            if (flight.getFlightId() != null) {
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
             }
         }
     }
@@ -235,12 +233,12 @@ public class Print {
         System.out.println("5- Booked tickets");
         System.out.println("6- Add charge");
         System.out.println("0- Sign out");
-        System.out.printf(">>");
+        System.out.print(">>");
         chose = input.nextInt();
         while (chose >6 || chose < 0 )
         {
             System.out.println("Try again!" );
-            System.out.printf(">>");
+            System.out.print(">>");
             chose=input.nextInt();
         }
         return chose;
@@ -255,12 +253,12 @@ public class Print {
         System.out.println("5- Time");
         System.out.println("6- Price");
         System.out.println("7- Seats");
-        System.out.printf(">>");
+        System.out.print(">>");
         chose = input.nextInt();
         while (chose >7 || chose < 1 )
         {
             System.out.println("Try again!" );
-            System.out.printf(">>");
+            System.out.print(">>");
             chose=input.nextInt();
         }
         return chose;
@@ -270,9 +268,9 @@ public class Print {
         String str;
         System.out.print("Enter FlightId :");
         str = input.next();
-        for (int i = 0; i < flights.length; i++) {
-            if(flights[i].getFlightId() != null && flights[i].getFlightId().equals(str))
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
+        for (Flight flight : flights) {
+            if (flight.getFlightId() != null && flight.getFlightId().equals(str))
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
 
         }
     }
@@ -282,9 +280,9 @@ public class Print {
         String str;
         System.out.print("Enter Origin :");
         str = input.next();
-        for (int i = 0; i < flights.length; i++) {
-            if(flights[i].getFlightId() != null && flights[i].getOrigin().equals(str))
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
+        for (Flight flight : flights) {
+            if (flight.getFlightId() != null && flight.getOrigin().equals(str))
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
 
         }
     }
@@ -294,9 +292,9 @@ public class Print {
         String str;
         System.out.print("Enter Destination :");
         str = input.next();
-        for (int i = 0; i < flights.length; i++) {
-            if(flights[i].getFlightId() != null && flights[i].getDestination().equals(str))
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
+        for (Flight flight : flights) {
+            if (flight.getFlightId() != null && flight.getDestination().equals(str))
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
 
         }
     }
@@ -306,9 +304,9 @@ public class Print {
         String str;
         System.out.print("Enter Date :");
         str = input.next();
-        for (int i = 0; i < flights.length; i++) {
-            if(flights[i].getFlightId() != null && flights[i].getDate().equals(str))
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
+        for (Flight flight : flights) {
+            if (flight.getFlightId() != null && flight.getDate().equals(str))
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
 
         }
     }
@@ -318,9 +316,9 @@ public class Print {
         String str;
         System.out.print("Enter Time :");
         str = input.next();
-        for (int i = 0; i < flights.length; i++) {
-            if(flights[i].getFlightId() != null && flights[i].getTime().equals(str))
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
+        for (Flight flight : flights) {
+            if (flight.getFlightId() != null && flight.getTime().equals(str))
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
 
         }
     }
@@ -330,9 +328,9 @@ public class Print {
         int price;
         System.out.print("Enter Price :");
         price = input.nextInt();
-        for (int i = 0; i < flights.length; i++) {
-            if(flights[i].getFlightId() != null && flights[i].getPrice()==price)
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
+        for (Flight flight : flights) {
+            if (flight.getFlightId() != null && flight.getPrice() == price)
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
 
         }
     }
@@ -342,9 +340,9 @@ public class Print {
         int seats;
         System.out.print("Enter Seats :");
         seats = input.nextInt();
-        for (int i = 0; i < flights.length; i++) {
-            if(flights[i].getFlightId() != null && flights[i].getSeats()==seats)
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n",flights[i].getFlightId(),flights[i].getOrigin(),flights[i].getDestination(),flights[i].getDate(),flights[i].getTime(),flights[i].getPrice(),flights[i].getSeats());
+        for (Flight flight : flights) {
+            if (flight.getFlightId() != null && flight.getSeats() == seats)
+                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
 
         }
     }
@@ -353,7 +351,7 @@ public class Print {
         int indexFlight = 0;
         int indexUser=0;
         int flag = 0;
-        System.out.printf("Enter flightId : ");
+        System.out.print("Enter flightId : ");
         flight = input.next();
         while (true) {
             for (int i = 0; i < flights.length; i++) {
@@ -371,7 +369,7 @@ public class Print {
                 break;
             } else {
                 System.out.println("Try again");
-                System.out.printf(">>");
+                System.out.print(">>");
                 flight = input.next();
             }
 
@@ -419,7 +417,7 @@ public class Print {
             }
 
         }
-        System.out.printf("Which ticket you eant delete , Enter flightId :  ");
+        System.out.print("Which ticket you eant delete , Enter flightId :  ");
         flightid = input.next();
 
     }

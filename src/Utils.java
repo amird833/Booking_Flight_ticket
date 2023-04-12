@@ -106,7 +106,7 @@ public class Utils {
     {
         newUsers();
         newFlight();
-        int exitFlag = 0;
+        int exitFlag;
         print.addDefultFly(flights);
         int userCount = 0;
         while (true)
@@ -141,35 +141,20 @@ public class Utils {
                             switch (print.printOtherOption()) {
                                 case 1:
                                     System.out.printf("Old password : %s\n",users[mainIndex].getPassword());
-                                    System.out.printf("New password : ");
+                                    System.out.print("New password : ");
                                     users[mainIndex].setPassword(input.next());
                                     System.out.println("Change successfully");
                                     break;
                                 case 2:
                                 {
-                                    switch (print.searchFlight())
-                                    {
-                                        case 1:
-                                            print.flightIdSort(flights);
-                                            break;
-                                        case 2:
-                                            print.originSort(flights);
-                                            break;
-                                        case 3:
-                                            print.destinationSort(flights);
-                                            break;
-                                        case 4:
-                                            print.dateSort(flights);
-                                            break;
-                                        case 5:
-                                            print.timeSort(flights);
-                                            break;
-                                        case 6:
-                                            print.priceSort(flights);
-                                            break;
-                                        case 7:
-                                            print.seatsSort(flights);
-                                            break;
+                                    switch (print.searchFlight()) {
+                                        case 1 -> print.flightIdSort(flights);
+                                        case 2 -> print.originSort(flights);
+                                        case 3 -> print.destinationSort(flights);
+                                        case 4 -> print.dateSort(flights);
+                                        case 5 -> print.timeSort(flights);
+                                        case 6 -> print.priceSort(flights);
+                                        case 7 -> print.seatsSort(flights);
                                     }
                                 }
                                     break;
