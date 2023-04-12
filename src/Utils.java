@@ -113,7 +113,7 @@ public class Utils {
     public void start()
     {
         newUsers();
-        int exitFlagOther = 1;
+        int exitFlagOther ;
         newFlight();
         int exitFlag;
         print.addDefultFly(flights);
