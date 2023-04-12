@@ -165,6 +165,7 @@ public class Utils {
                                     print.cancellBook(flights,users[mainIndex]);
                                     break;
                                 case 5:
+                                    print.printBookedTicket(flights,users[mainIndex]);
                                     break;
                                 case 6:
                                     break;
