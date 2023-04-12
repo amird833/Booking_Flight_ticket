@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="Finish for this night :)" />
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="Finish for this night :)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,13 +57,9 @@
       <workItem from="1681190829869" duration="9835000" />
       <workItem from="1681211205902" duration="209000" />
       <workItem from="1681227717098" duration="14020000" />
-    </task>
-    <task id="LOCAL-00004" summary="add printSignMenu methods for print first menu">
-      <created>1681191893255</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1681191893255</updated>
+      <workItem from="1681244140884" duration="22000" />
+      <workItem from="1681244841541" duration="74000" />
+      <workItem from="1681294493468" duration="188000" />
     </task>
     <task id="LOCAL-00005" summary="add Methods object and finish the Main class">
       <created>1681192182781</created>
@@ -399,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681241967946</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Finish for this night :)">
+      <created>1681244154547</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1681244154547</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
