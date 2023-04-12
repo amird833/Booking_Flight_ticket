@@ -405,11 +405,10 @@ public class Print {
         for (int i = 0; i < user.ticketFlightId.length; i++) {
             if (user.ticketFlightId[i] != null)
             {
-                for (int j = 0; j < flights.length; j++) {
+                for (Flight flight : flights) {
                     {
-                        if (flights[j].getFlightId() != null && flights[j].getFlightId().equals(user.ticketFlightId[i]))
-                        {
-                            System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flights[j].getFlightId(), flights[j].getOrigin(), flights[j].getDestination(), flights[j].getDate(), flights[j].getTime(), flights[j].getPrice(), flights[j].getSeats());
+                        if (flight.getFlightId() != null && flight.getFlightId().equals(user.ticketFlightId[i])) {
+                            System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
                         }
                     }
 
