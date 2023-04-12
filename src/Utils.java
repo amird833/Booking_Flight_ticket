@@ -151,13 +151,13 @@ public class Utils {
                             while(exitFlagOther != 0)
                             {
                                 switch (print.printOtherOption()) {
-                                    case 1:
+                                    case 1 -> {
                                         System.out.printf("Old password : %s\n", users[mainIndex].getPassword());
                                         System.out.print("New password : ");
                                         users[mainIndex].setPassword(input.next());
                                         System.out.println("Change successfully");
-                                        break;
-                                    case 2: {
+                                    }
+                                    case 2 -> {
                                         switch (print.searchFlight()) {
                                             case 1 -> print.flightIdSort(flights);
                                             case 2 -> print.originSort(flights);
@@ -168,23 +168,11 @@ public class Utils {
                                             case 7 -> print.seatsSort(flights);
                                         }
                                     }
-                                    break;
-                                    case 3:
-                                        print.booking(flights, users[mainIndex]);
-                                        break;
-                                    case 4:
-                                        print.cancellBook(flights, users[mainIndex]);
-                                        break;
-                                    case 5:
-                                        print.printBookedTicket(flights, users[mainIndex]);
-                                        break;
-                                    case 6:
-                                        charge();
-                                        break;
-                                    case 0:
-                                        exitFlagOther = 0;
-                                        break;
-
+                                    case 3 -> print.booking(flights, users[mainIndex]);
+                                    case 4 -> print.cancellBook(flights, users[mainIndex]);
+                                    case 5 -> print.printBookedTicket(flights, users[mainIndex]);
+                                    case 6 -> charge();
+                                    case 0 -> exitFlagOther = 0;
                                 }
                             }
                         }
