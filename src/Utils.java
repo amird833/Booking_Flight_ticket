@@ -102,6 +102,13 @@ public class Utils {
             }
         }
     }
+    private void charge()
+    {
+        int charge;
+        System.out.println("Enter Your number you want charge : ");
+        charge = input.nextInt();
+        users[mainIndex].setVault(users[mainIndex].getVault()+charge);
+    }
     public void start()
     {
         newUsers();
@@ -168,9 +175,9 @@ public class Utils {
                                     print.printBookedTicket(flights,users[mainIndex]);
                                     break;
                                 case 6:
+                                    charge();
                                     break;
-                                case 0:
-                                    break;
+
                             }
                         }
                     }
