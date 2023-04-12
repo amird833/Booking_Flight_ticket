@@ -399,7 +399,8 @@ public class Print {
     public void cancellBook(Flight[] flights , User user)
     {
         int flag = 0;
-
+        int userIndex =0;
+        int flightIndex =0;
         String flightid;
         System.out.println("You have these tickets ");
         for (int i = 0; i < user.ticketFlightId.length; i++) {
@@ -416,8 +417,32 @@ public class Print {
             }
 
         }
-        System.out.print("Which ticket you eant delete , Enter flightId :  ");
+        System.out.print("Which ticket you want delete , Enter flightId :  ");
         flightid = input.next();
-
+        for (int i = 0; i < user.ticketFlightId.length; i++) {
+            if (user.ticketFlightId[i] != null && user.ticketFlightId[i].equals(flightid))
+            {
+                flag = 1;
+                userIndex = i;
+                break;
+            }
+        }
+        if (flag == 1)
+        {
+            user.ticketFlightId[userIndex] = null;
+            for (int i = 0; i < flights.length; i++) {
+                if (flights[i].getFlightId()!= null && flights[i].getFlightId().equals(flightid))
+                {
+                    flightIndex = i;
+                    break;
+                }
+            }
+            user.setVault(user.getVault() + flights[flightIndex].getPrice());
+            flights[flightIndex].setSeats(flights[flightIndex].getSeats()+1);
+        }
+        else
+        {
+            System.out.println("This flightIs is Incrrect!");
+        }
     }
 }
