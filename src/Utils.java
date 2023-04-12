@@ -112,6 +112,7 @@ public class Utils {
     public void start()
     {
         newUsers();
+        int exitFlagOther = 1;
         newFlight();
         int exitFlag;
         print.addDefultFly(flights);
@@ -145,39 +146,45 @@ public class Utils {
                         case 2 ->//other
                         {
                             System.out.printf("Welcome %s",users[mainIndex].getUsername());
-                            switch (print.printOtherOption()) {
-                                case 1:
-                                    System.out.printf("Old password : %s\n",users[mainIndex].getPassword());
-                                    System.out.print("New password : ");
-                                    users[mainIndex].setPassword(input.next());
-                                    System.out.println("Change successfully");
-                                    break;
-                                case 2:
-                                {
-                                    switch (print.searchFlight()) {
-                                        case 1 -> print.flightIdSort(flights);
-                                        case 2 -> print.originSort(flights);
-                                        case 3 -> print.destinationSort(flights);
-                                        case 4 -> print.dateSort(flights);
-                                        case 5 -> print.timeSort(flights);
-                                        case 6 -> print.priceSort(flights);
-                                        case 7 -> print.seatsSort(flights);
+                            exitFlagOther = 1;
+                            while(exitFlagOther != 0)
+                            {
+                                switch (print.printOtherOption()) {
+                                    case 1:
+                                        System.out.printf("Old password : %s\n", users[mainIndex].getPassword());
+                                        System.out.print("New password : ");
+                                        users[mainIndex].setPassword(input.next());
+                                        System.out.println("Change successfully");
+                                        break;
+                                    case 2: {
+                                        switch (print.searchFlight()) {
+                                            case 1 -> print.flightIdSort(flights);
+                                            case 2 -> print.originSort(flights);
+                                            case 3 -> print.destinationSort(flights);
+                                            case 4 -> print.dateSort(flights);
+                                            case 5 -> print.timeSort(flights);
+                                            case 6 -> print.priceSort(flights);
+                                            case 7 -> print.seatsSort(flights);
+                                        }
                                     }
-                                }
                                     break;
-                                case 3:
-                                    print.booking(flights,users[mainIndex]);
-                                    break;
-                                case 4:
-                                    print.cancellBook(flights,users[mainIndex]);
-                                    break;
-                                case 5:
-                                    print.printBookedTicket(flights,users[mainIndex]);
-                                    break;
-                                case 6:
-                                    charge();
-                                    break;
+                                    case 3:
+                                        print.booking(flights, users[mainIndex]);
+                                        break;
+                                    case 4:
+                                        print.cancellBook(flights, users[mainIndex]);
+                                        break;
+                                    case 5:
+                                        print.printBookedTicket(flights, users[mainIndex]);
+                                        break;
+                                    case 6:
+                                        charge();
+                                        break;
+                                    case 7:
+                                        exitFlagOther = 0;
+                                        break;
 
+                                }
                             }
                         }
                     }
