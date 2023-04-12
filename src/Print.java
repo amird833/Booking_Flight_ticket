@@ -385,7 +385,7 @@ public class Print {
             System.out.println("You dont have enugh many :(");
 
         }
-        else if (flights[indexFlight].getSeats() > 0)
+        else if (flights[indexFlight].getSeats() == 0)
         {
             System.out.println("This flight dont have any seats");
         }
