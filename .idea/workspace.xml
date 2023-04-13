@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="design Menu option again">
-      <change beforePath="$PROJECT_DIR$/src/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Print.java" afterDir="false" />
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="design username and password">
+      <change beforePath="$PROJECT_DIR$/src/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,21 +74,7 @@
       <workItem from="1681294493468" duration="188000" />
       <workItem from="1681294851809" duration="6539000" />
       <workItem from="1681322975325" duration="679000" />
-      <workItem from="1681380184581" duration="1637000" />
-    </task>
-    <task id="LOCAL-00021" summary="add printAdminOption methode to Print class">
-      <created>1681196142977</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1681196142977</updated>
-    </task>
-    <task id="LOCAL-00022" summary="add switch case of admin">
-      <created>1681196929827</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1681196929827</updated>
+      <workItem from="1681380184581" duration="2292000" />
     </task>
     <task id="LOCAL-00023" summary="add switch case of admin">
       <created>1681196991695</created>
@@ -419,7 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681381805165</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="design Menu option again">
+      <created>1681381864411</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1681381864411</updated>
+    </task>
+    <task id="LOCAL-00071" summary="design username and password">
+      <created>1681382226247</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1681382226247</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +449,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add addDefultFly methode" />
     <MESSAGE value="add update methode" />
     <MESSAGE value="add Remove methode" />
     <MESSAGE value="add printFlight" />
@@ -474,6 +473,7 @@
     <MESSAGE value="Fix bug and warning" />
     <MESSAGE value="Start Front end and design Menu option" />
     <MESSAGE value="design Menu option again" />
-    <option name="LAST_COMMIT_MESSAGE" value="design Menu option again" />
+    <MESSAGE value="design username and password" />
+    <option name="LAST_COMMIT_MESSAGE" value="design username and password" />
   </component>
 </project>

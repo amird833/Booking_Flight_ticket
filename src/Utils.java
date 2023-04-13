@@ -27,6 +27,9 @@ public class Utils {
         String userStr="";
         int flag = 1;
         int flagUser ;
+        System.out.println(":.................................................: ");
+        System.out.println(": ...........Please enter the Username........... : ");
+        System.out.println(":.................................................: ");
         System.out.print("\tUsername : ");
         while (flag == 1)
         {
@@ -46,7 +49,7 @@ public class Utils {
             }
             else
             {
-                System.out.println("\tIncorrect!");
+                System.out.println("\tThis Username is already exist!");
                 System.out.println("\tTry again ");
                 System.out.print("\tUsername : ");
             }
