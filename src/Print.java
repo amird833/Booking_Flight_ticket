@@ -253,9 +253,10 @@ public class Print {
     }
     public void printFlight(Flight[] flights)
     {
+        System.out.println("\tFlightId       |Origin       |Destination       |Date       |Time       |Price       |Seats");
         for (Flight flight : flights) {
             if (flight.getFlightId() != null) {
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
+                System.out.printf("\t%6s       |%6s       |%6s       |%6s       |%6s       %|10d       |%3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
             }
         }
     }
