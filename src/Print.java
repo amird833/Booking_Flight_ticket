@@ -72,7 +72,7 @@ public class Print {
     public void addAdmin(Flight[] flights)
     {
         System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
-        System.out.println(":...................ADD FLIGHT....................: ");
+        System.out.println(": ..................ADD FLIGHT................... : ");
         System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
 
         String str;
@@ -120,7 +120,11 @@ public class Print {
     }
     public void updateFlight(Flight[] flights)
     {
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println(": .................UPDATE FLIGHT................. : ");
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
         String flightId;
+        System.out.println("\tFlightId : ");
         flightId = input.next();
         int index =0;
         int flag = 0;
@@ -136,47 +140,65 @@ public class Print {
         {
             switch (printPartOfFlightInformation()) {
                 case 1 -> {
-                    System.out.printf("Old Origin : %s", flights[index].getOrigin());
-                    System.out.print("New Origin : ");
+                    System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+                    System.out.println(": .................UPDATE ORIGIN................. : ");
+                    System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+                    System.out.printf("\tOld Origin : %s", flights[index].getOrigin());
+                    System.out.print("\tNew Origin : ");
                     flights[index].setOrigin(input.next());
-                    System.out.println("Change is successfully");
+                    System.out.println("\tChange is successfully :)");
                 }
                 case 2 -> {
-                    System.out.printf("Old Destination : %s", flights[index].getDestination());
-                    System.out.print("New Destination : ");
+                    System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+                    System.out.println(": ..............UPDATE DESTINATION............... : ");
+                    System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+                    System.out.printf("\tOld Destination : %s", flights[index].getDestination());
+                    System.out.print("\tNew Destination : ");
                     flights[index].setDestination(input.next());
-                    System.out.println("Change is successfully");
+                    System.out.println("\tChange is successfully :)");
                 }
                 case 3 -> {
-                    System.out.printf("Old Date : %s", flights[index].getDate());
-                    System.out.print("New Date : ");
+                    System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+                    System.out.println(": ..................UPDATE DATE.................. : ");
+                    System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+                    System.out.printf("\tOld Date : %s", flights[index].getDate());
+                    System.out.print("\tNew Date : ");
                     flights[index].setDate(input.next());
-                    System.out.println("Change is successfully");
+                    System.out.println("\tChange is successfully :)");
                 }
                 case 4 -> {
-                    System.out.printf("Old Time : %s", flights[index].getTime());
-                    System.out.print("New Time : ");
+                    System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+                    System.out.println(": ..................UPDATE TIME.................. : ");
+                    System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+                    System.out.printf("\tOld Time : %s", flights[index].getTime());
+                    System.out.print("\tNew Time : ");
                     flights[index].setTime(input.next());
-                    System.out.println("Change is successfully");
+                    System.out.println("\tChange is successfully :)");
                 }
                 case 5 -> {
-                    System.out.printf("Old Price : %d", flights[index].getPrice());
-                    System.out.print("New Price : ");
+                    System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+                    System.out.println(": .................UPDATE PRICE.................. : ");
+                    System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+                    System.out.printf("\tOld Price : %d", flights[index].getPrice());
+                    System.out.print("\tNew Price : ");
                     flights[index].setPrice(input.nextInt());
-                    System.out.println("Change is successfully");
+                    System.out.println("\tChange is successfully :)");
                 }
                 case 6 -> {
-                    System.out.printf("Old Seats : %d", flights[index].getSeats());
-                    System.out.print("New Seats : ");
+                    System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+                    System.out.println(": .................UPDATE SEATS.................. : ");
+                    System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+                    System.out.printf("\tOld Seats : %d", flights[index].getSeats());
+                    System.out.print("\tNew Seats : ");
                     flights[index].setSeats(input.nextInt());
-                    System.out.println("Change is successfully");
+                    System.out.println("\tChange is successfully :)");
                 }
             }
 
         }
         else
         {
-            System.out.println("Cant find this flight Id");
+            System.out.println("\tCant find this FlightId :(");
         }
     }
     public int printPartOfFlightInformation()
