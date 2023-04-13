@@ -117,7 +117,7 @@ public class Utils {
                 return i;
 
         }
-
+        return 0;
     }
     public void start()
     {
@@ -126,7 +126,7 @@ public class Utils {
         newFlight();
         int exitFlag;
         print.addDefultFly(flights);
-        int userCount = 0;
+        int userCount ;
         while (true)
         {
             switch (print.printSignMenu()) {

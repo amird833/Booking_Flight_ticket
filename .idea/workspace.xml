@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="Finish backEnd :)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="Update find null user">
       <change beforePath="$PROJECT_DIR$/src/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,14 +74,7 @@
       <workItem from="1681294493468" duration="188000" />
       <workItem from="1681294851809" duration="6539000" />
       <workItem from="1681322975325" duration="679000" />
-      <workItem from="1681380184581" duration="306000" />
-    </task>
-    <task id="LOCAL-00017" summary="Rename Methods to Utils">
-      <created>1681195113708</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1681195113708</updated>
+      <workItem from="1681380184581" duration="393000" />
     </task>
     <task id="LOCAL-00018" summary="add signing method for sign in">
       <created>1681195342946</created>
@@ -420,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681299835620</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="Update find null user">
+      <created>1681380548712</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1681380548712</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +449,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add newFlight for new array and fix bug" />
     <MESSAGE value="fix bug for find null cell of flights and add to this cell" />
     <MESSAGE value="finish addAdmin" />
     <MESSAGE value="add 3 flight information" />
@@ -475,6 +473,7 @@
     <MESSAGE value="add while for other switch case" />
     <MESSAGE value="add cunstructor to User class for initialize vault" />
     <MESSAGE value="Finish backEnd :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish backEnd :)" />
+    <MESSAGE value="Update find null user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update find null user" />
   </component>
 </project>
