@@ -15,8 +15,8 @@ public class Print {
         chose = input.nextInt();
         while (chose > 2 || chose < 1)
         {
-            System.out.println("Try again!");
-            System.out.print(">>");
+            System.out.println("\tTry again!");
+            System.out.print("\t>>");
             chose = input.nextInt();
         }
         return chose;

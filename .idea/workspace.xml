@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="Fix bug and warning">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="design Menu option again">
       <change beforePath="$PROJECT_DIR$/src/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Print.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,21 +74,7 @@
       <workItem from="1681294493468" duration="188000" />
       <workItem from="1681294851809" duration="6539000" />
       <workItem from="1681322975325" duration="679000" />
-      <workItem from="1681380184581" duration="1199000" />
-    </task>
-    <task id="LOCAL-00019" summary="Fix warning">
-      <created>1681195520494</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1681195520494</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Fix warning">
-      <created>1681195772988</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1681195772988</updated>
+      <workItem from="1681380184581" duration="1637000" />
     </task>
     <task id="LOCAL-00021" summary="add printAdminOption methode to Print class">
       <created>1681196142977</created>
@@ -420,7 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681380599063</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Start Front end and design Menu option">
+      <created>1681381516597</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1681381516597</updated>
+    </task>
+    <task id="LOCAL-00069" summary="design Menu option again">
+      <created>1681381805165</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1681381805165</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,8 +449,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="finish addAdmin" />
-    <MESSAGE value="add 3 flight information" />
     <MESSAGE value="add addDefultFly methode" />
     <MESSAGE value="add update methode" />
     <MESSAGE value="add Remove methode" />
@@ -475,6 +472,8 @@
     <MESSAGE value="Finish backEnd :)" />
     <MESSAGE value="Update find null user" />
     <MESSAGE value="Fix bug and warning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix bug and warning" />
+    <MESSAGE value="Start Front end and design Menu option" />
+    <MESSAGE value="design Menu option again" />
+    <option name="LAST_COMMIT_MESSAGE" value="design Menu option again" />
   </component>
 </project>
