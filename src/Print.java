@@ -24,17 +24,21 @@ public class Print {
     public int printAdminOption()
     {
         int chose;
-        System.out.println("1- Add");
-        System.out.println("2- Update");
-        System.out.println("3- Remove");
-        System.out.println("4 - Flight schedules");
-        System.out.println("0 - Sign out");
-        System.out.print(">>");
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println(":              WELCOME TO ADMIN MENU              :");
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println(":.....................ADMIN......................: ");
+        System.out.println("\t1- Add");
+        System.out.println("\t2- Update");
+        System.out.println("\t3- Remove");
+        System.out.println("\t4 - Flight schedules");
+        System.out.println("\t0 - Sign out");
+        System.out.print("\t>>");
         chose = input.nextInt();
         while (chose > 4 || chose<0)
         {
-            System.out.println("Try again!");
-            System.out.print(">>");
+            System.out.println("\tTry again!");
+            System.out.print("\t>>");
             chose = input.nextInt();
         }
         return chose;
