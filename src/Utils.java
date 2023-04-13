@@ -193,7 +193,10 @@ public class Utils {
                 case 2 -> {//sabte num
                     userCount = nullUser();
                     addUser(userCount);
-                    System.out.print("Password : ");
+                    System.out.println(":.................................................: ");
+                    System.out.println(": ...........Please enter the Password........... : ");
+                    System.out.println(":.................................................: ");
+                    System.out.print("\tPassword : ");
                     users[userCount].setPassword(input.next());
                 }
             }
