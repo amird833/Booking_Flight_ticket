@@ -223,11 +223,14 @@ public class Print {
     }
     public void remove(Flight[] flights)
     {
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println(": .................REMOVE FLIGHT................. : ");
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
         String flightId;
         int flag = 0;
         int index = 0;
-        System.out.println("Enter flightId you want delete");
-        System.out.print(">>");
+        System.out.println("\tEnter FlightId you want delete");
+        System.out.print("\t>>");
         flightId = input.next();
         for (int i = 0; i < flights.length; i++) {
             if(flights[i].getFlightId()!=null && flights[i].getFlightId().equals(flightId))
@@ -240,11 +243,11 @@ public class Print {
         if (flag ==1)
         {
             flights[index].setFlightId(null);
-            System.out.println("Delete is successfully");
+            System.out.println("Delete is successfully :)");
         }
         else
         {
-            System.out.println("Cant find this flightId!");
+            System.out.println("Cant find this flightId! :(");
         }
 
     }
