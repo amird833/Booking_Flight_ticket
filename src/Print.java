@@ -263,20 +263,24 @@ public class Print {
     public int printOtherOption()
     {
         int chose;
-        System.out.println("Select number");
-        System.out.println("1- Change password");
-        System.out.println("2- Search flight tickets");
-        System.out.println("3- Booking ticket");
-        System.out.println("4- Ticket cancellation");
-        System.out.println("5- Booked tickets");
-        System.out.println("6- Add charge");
-        System.out.println("0- Sign out");
-        System.out.print(">>");
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println(": ....................WELCOME.................... :");
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println(": .................SELECT NUMBER................. : ");
+        System.out.println("\tSelect number");
+        System.out.println("\t< 1 > Change password");
+        System.out.println("\t< 2 > Search flight tickets");
+        System.out.println("\t< 3 > Booking ticket");
+        System.out.println("\t< 4 > Ticket cancellation");
+        System.out.println("\t< 5 > Booked tickets");
+        System.out.println("\t< 6 > Add charge");
+        System.out.println("\t< 0 > Sign out");
+        System.out.print("\t>>");
         chose = input.nextInt();
         while (chose >6 || chose < 0 )
         {
-            System.out.println("Try again!" );
-            System.out.print(">>");
+            System.out.println("\tTry again!" );
+            System.out.print("\t>>");
             chose=input.nextInt();
         }
         return chose;
