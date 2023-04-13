@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="design admin menu" />
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="design Other menu">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,49 +75,7 @@
       <workItem from="1681294493468" duration="188000" />
       <workItem from="1681294851809" duration="6539000" />
       <workItem from="1681322975325" duration="679000" />
-      <workItem from="1681380184581" duration="4168000" />
-    </task>
-    <task id="LOCAL-00026" summary="add option of flight to Flight class">
-      <created>1681197823766</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1681197823766</updated>
-    </task>
-    <task id="LOCAL-00027" summary="add FlightId to addAdmin methode">
-      <created>1681198935704</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1681198935704</updated>
-    </task>
-    <task id="LOCAL-00028" summary="add newFlight for new array and fix bug">
-      <created>1681199472259</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1681199472259</updated>
-    </task>
-    <task id="LOCAL-00029" summary="add newFlight for new array and fix bug">
-      <created>1681199770985</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1681199770985</updated>
-    </task>
-    <task id="LOCAL-00030" summary="fix bug for find null cell of flights and add to this cell">
-      <created>1681200045715</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1681200045715</updated>
-    </task>
-    <task id="LOCAL-00031" summary="fix bug for find null cell of flights and add to this cell">
-      <created>1681200181476</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1681200181476</updated>
+      <workItem from="1681380184581" duration="6801000" />
     </task>
     <task id="LOCAL-00032" summary="finish addAdmin">
       <created>1681229115248</created>
@@ -417,7 +378,49 @@
       <option name="project" value="LOCAL" />
       <updated>1681399588524</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="design admin add flight">
+      <created>1681399947652</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1681399947652</updated>
+    </task>
+    <task id="LOCAL-00076" summary="design admin update flight">
+      <created>1681400511055</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1681400511055</updated>
+    </task>
+    <task id="LOCAL-00077" summary="design admin update menu flight">
+      <created>1681400619389</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1681400619389</updated>
+    </task>
+    <task id="LOCAL-00078" summary="design admin remove menu flight">
+      <created>1681401115122</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1681401115122</updated>
+    </task>
+    <task id="LOCAL-00079" summary="design print flight">
+      <created>1681401423565</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1681401423565</updated>
+    </task>
+    <task id="LOCAL-00080" summary="design Other menu">
+      <created>1681401645489</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1681401645489</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,12 +450,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add printFlight" />
-    <MESSAGE value="fix printFlight bug" />
-    <MESSAGE value="add other submit case" />
-    <MESSAGE value="add change password" />
-    <MESSAGE value="add searchFlight" />
-    <MESSAGE value="add flightIdSort" />
     <MESSAGE value="add originSort" />
     <MESSAGE value="finish filter" />
     <MESSAGE value="add booking" />
@@ -472,6 +469,12 @@
     <MESSAGE value="design username and password" />
     <MESSAGE value="design username and password again" />
     <MESSAGE value="design admin menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="design admin menu" />
+    <MESSAGE value="design admin add flight" />
+    <MESSAGE value="design admin update flight" />
+    <MESSAGE value="design admin update menu flight" />
+    <MESSAGE value="design admin remove menu flight" />
+    <MESSAGE value="design print flight" />
+    <MESSAGE value="design Other menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="design Other menu" />
   </component>
 </project>

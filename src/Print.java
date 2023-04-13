@@ -287,20 +287,24 @@ public class Print {
     }
     public int searchFlight()
     {
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println(": ................SEARCH FLIGHTS................. :");
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println(": .................SELECT NUMBER................. : ");
         int chose ;
-        System.out.println("1- FlightId");
-        System.out.println("2- Origin");
-        System.out.println("3- Destination");
-        System.out.println("4- Date");
-        System.out.println("5- Time");
-        System.out.println("6- Price");
-        System.out.println("7- Seats");
-        System.out.print(">>");
+        System.out.println("\t< 1 > FlightId");
+        System.out.println("\t< 2 > Origin");
+        System.out.println("\t< 3 > Destination");
+        System.out.println("\t< 4 > Date");
+        System.out.println("\t< 5 > Time");
+        System.out.println("\t< 6 > Price");
+        System.out.println("\t< 7 > Seats");
+        System.out.print("\t>>");
         chose = input.nextInt();
         while (chose >7 || chose < 1 )
         {
-            System.out.println("Try again!" );
-            System.out.print(">>");
+            System.out.println("\tTry again!" );
+            System.out.print("\t>>");
             chose=input.nextInt();
         }
         return chose;
@@ -308,11 +312,11 @@ public class Print {
     public void flightIdSort(Flight[] flights)
     {
         String str;
-        System.out.print("Enter FlightId :");
+        System.out.print("\tEnter FlightId :");
         str = input.next();
         for (Flight flight : flights) {
             if (flight.getFlightId() != null && flight.getFlightId().equals(str))
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
+                System.out.printf("%6s       |%6s       |%6s       |%6s       |%6s       |%10d       |%3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
 
         }
     }
@@ -320,11 +324,11 @@ public class Print {
     public void originSort(Flight[] flights)
     {
         String str;
-        System.out.print("Enter Origin :");
+        System.out.print("\tEnter Origin :");
         str = input.next();
         for (Flight flight : flights) {
             if (flight.getFlightId() != null && flight.getOrigin().equals(str))
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
+                System.out.printf("%6s       |%6s       |%6s       |%6s       |%6s       |%10d       |%3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
 
         }
     }
@@ -332,11 +336,11 @@ public class Print {
     public void destinationSort(Flight[] flights)
     {
         String str;
-        System.out.print("Enter Destination :");
+        System.out.print("\tEnter Destination :");
         str = input.next();
         for (Flight flight : flights) {
             if (flight.getFlightId() != null && flight.getDestination().equals(str))
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
+                System.out.printf("%6s       |%6s       |%6s       |%6s       |%6s       |%10d       |%3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
 
         }
     }
@@ -344,11 +348,11 @@ public class Print {
     public void dateSort(Flight[] flights)
     {
         String str;
-        System.out.print("Enter Date :");
+        System.out.print("\tEnter Date :");
         str = input.next();
         for (Flight flight : flights) {
             if (flight.getFlightId() != null && flight.getDate().equals(str))
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
+                System.out.printf("%6s       |%6s       |%6s       |%6s       |%6s       |%10d       |%3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
 
         }
     }
@@ -356,11 +360,11 @@ public class Print {
     public void timeSort(Flight[] flights)
     {
         String str;
-        System.out.print("Enter Time :");
+        System.out.print("\tEnter Time :");
         str = input.next();
         for (Flight flight : flights) {
             if (flight.getFlightId() != null && flight.getTime().equals(str))
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
+                System.out.printf("%6s       |%6s       |%6s       |%6s       |%6s       |%10d       |%3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
 
         }
     }
@@ -368,11 +372,11 @@ public class Print {
     public void priceSort(Flight[] flights)
     {
         int price;
-        System.out.print("Enter Price :");
+        System.out.print("\tEnter Price :");
         price = input.nextInt();
         for (Flight flight : flights) {
             if (flight.getFlightId() != null && flight.getPrice() == price)
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
+                System.out.printf("%6s       |%6s       |%6s       |%6s       |%6s       |%10d       |%3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
 
         }
     }
@@ -380,11 +384,11 @@ public class Print {
     public void seatsSort(Flight[] flights)
     {
         int seats;
-        System.out.print("Enter Seats :");
+        System.out.print("\tEnter Seats :");
         seats = input.nextInt();
         for (Flight flight : flights) {
             if (flight.getFlightId() != null && flight.getSeats() == seats)
-                System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
+                System.out.printf("%6s       |%6s       |%6s       |%6s       |%6s       |%10d       |%3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), flight.getSeats());
 
         }
     }
@@ -393,7 +397,11 @@ public class Print {
         int indexFlight = 0;
         int indexUser=0;
         int flag = 0;
-        System.out.print("Enter flightId : ");
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println(": ................BOOKING TICKET................. :");
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println(": .................SELECT NUMBER................. : ");
+        System.out.print("\tEnter flightId : ");
         flight = input.next();
         while (true) {
             for (int i = 0; i < flights.length; i++) {
