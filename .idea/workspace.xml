@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="design username and password again">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="design admin menu" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,14 +72,7 @@
       <workItem from="1681294493468" duration="188000" />
       <workItem from="1681294851809" duration="6539000" />
       <workItem from="1681322975325" duration="679000" />
-      <workItem from="1681380184581" duration="3718000" />
-    </task>
-    <task id="LOCAL-00025" summary="add Flight class">
-      <created>1681197479176</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1681197479176</updated>
+      <workItem from="1681380184581" duration="4168000" />
     </task>
     <task id="LOCAL-00026" summary="add option of flight to Flight class">
       <created>1681197823766</created>
@@ -419,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681382719785</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="design admin menu">
+      <created>1681399588524</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1681399588524</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +447,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add Remove methode" />
     <MESSAGE value="add printFlight" />
     <MESSAGE value="fix printFlight bug" />
     <MESSAGE value="add other submit case" />
@@ -474,6 +471,7 @@
     <MESSAGE value="design Menu option again" />
     <MESSAGE value="design username and password" />
     <MESSAGE value="design username and password again" />
-    <option name="LAST_COMMIT_MESSAGE" value="design username and password again" />
+    <MESSAGE value="design admin menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="design admin menu" />
   </component>
 </project>

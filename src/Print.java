@@ -71,9 +71,13 @@ public class Print {
     }
     public void addAdmin(Flight[] flights)
     {
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println(":...................ADD FLIGHT....................: ");
+        System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+
         String str;
         int flag =0;
-        System.out.print("FlightId : ");
+        System.out.print("\tFlightId : ");
         int index=0;
         for (int i = 0; i < flights.length; i++) {
             if (flights[i].getFlightId()==null)
@@ -90,8 +94,8 @@ public class Print {
             }
             if (flag ==1 )
             {
-                System.out.println("Incorrect!");
-                System.out.println("Try again");
+                System.out.println("\tIncorrect!");
+                System.out.println("\tTry again");
                 flag = 0;
             }
             else
@@ -101,17 +105,17 @@ public class Print {
             }
 
         }
-        System.out.print("Origin : ");
+        System.out.print("\tOrigin : ");
         flights[index].setOrigin(input.next());
-        System.out.print("Destination : ");
+        System.out.print("\tDestination : ");
         flights[index].setDestination(input.next());
-        System.out.print("Date : ");
+        System.out.print("\tDate : ");
         flights[index].setDate(input.next());
-        System.out.print("Time : ");
+        System.out.print("\tTime : ");
         flights[index].setTime(input.next());
-        System.out.print("Price : ");
+        System.out.print("\tPrice : ");
         flights[index].setPrice(input.nextInt());
-        System.out.print("Seats : ");
+        System.out.print("\tSeats : ");
         flights[index].setSeats(input.nextInt());
     }
     public void updateFlight(Flight[] flights)
@@ -460,7 +464,7 @@ public class Print {
             {
                 for (Flight flight : flights) {
                     if (flight.getFlightId() != null && flight.getFlightId().equals(user.ticketFlightId[i])) {
-                        System.out.printf("%6s       %6s        %6s            %6s          %6s        %10d         %3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), 1);
+                        System.out.printf("%6s       |%6s       |%6s       |%6s        |%6s       |%10d       |%3d\n", flight.getFlightId(), flight.getOrigin(), flight.getDestination(), flight.getDate(), flight.getTime(), flight.getPrice(), 1);
 
                     }
                 }
