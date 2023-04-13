@@ -27,7 +27,7 @@ public class Utils {
         String userStr="";
         int flag = 1;
         int flagUser ;
-        System.out.print("Username : ");
+        System.out.print("\tUsername : ");
         while (flag == 1)
         {
             flagUser = 0;
@@ -46,9 +46,9 @@ public class Utils {
             }
             else
             {
-                System.out.println("Incorrect!");
-                System.out.println("Try again ");
-                System.out.print("Username : ");
+                System.out.println("\tIncorrect!");
+                System.out.println("\tTry again ");
+                System.out.print("\tUsername : ");
             }
         }
         users[count].setUsername(userStr);
@@ -60,7 +60,7 @@ public class Utils {
         int index = 0;
         int flag = 0;
         while (true) {
-            System.out.print("Username : ");
+            System.out.print("\tUsername : ");
             userStr = input.next();
             if (userStr.equals("admin")) {
                 adminFlag = 1;
@@ -78,27 +78,27 @@ public class Utils {
             if (flag == 1 || adminFlag == 1)
                 break;
             else
-                System.out.print("Incorrect!\nTry again\n");
+                System.out.print("\tIncorrect!\n\tTry again\n");
 
         }
 
         if (adminFlag == 1) {
             while (true) {
-                System.out.print("Password : ");
+                System.out.print("\tPassword : ");
                 passStr = input.next();
                 if (passStr.equals("admin"))
                     return 1;
-                System.out.print("Incorrect\nTry again\n");
+                System.out.print("\tIncorrect\n\tTry again\n");
             }
         } else {
             while (true) {
-                System.out.print("Password : ");
+                System.out.print("\tPassword : ");
                 passStr = input.next();
                 if (passStr.equals(users[index].getPassword())) {
                     mainIndex = index;
                     return 2;
                 }
-                System.out.print("Incorrect\nTry again\n");
+                System.out.print("\tIncorrect\n\tTry again\n");
             }
         }
     }
