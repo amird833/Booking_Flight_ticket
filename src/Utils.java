@@ -110,6 +110,15 @@ public class Utils {
         charge = input.nextInt();
         users[mainIndex].setVault(users[mainIndex].getVault()+charge);
     }
+    private int nullUser()
+    {
+        for (int i = 0; i < users.length; i++) {
+            if (users[i].getUsername() == null)
+                return i;
+
+        }
+
+    }
     public void start()
     {
         newUsers();
@@ -179,10 +188,10 @@ public class Utils {
                     }
                 }
                 case 2 -> {//sabte num
+                    userCount = nullUser();
                     addUser(userCount);
                     System.out.print("Password : ");
                     users[userCount].setPassword(input.next());
-                    userCount++;
                 }
             }
         }

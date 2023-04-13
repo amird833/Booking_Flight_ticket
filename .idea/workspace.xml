@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="add cunstructor to User class for initialize vault">
+    <list default="true" id="111065dc-382d-40f3-aa42-531da11a2872" name="Changes" comment="Finish backEnd :)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,20 +38,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,28 +73,9 @@
       <workItem from="1681244140884" duration="22000" />
       <workItem from="1681244841541" duration="74000" />
       <workItem from="1681294493468" duration="188000" />
-      <workItem from="1681294851809" duration="4614000" />
-    </task>
-    <task id="LOCAL-00014" summary="add addUser methods for give username and pass ,but get a null exception :(">
-      <created>1681194532760</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1681194532760</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Fix bug with newUsers . forgot new array">
-      <created>1681194767119</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1681194767119</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Fix warning">
-      <created>1681194814767</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1681194814767</updated>
+      <workItem from="1681294851809" duration="6539000" />
+      <workItem from="1681322975325" duration="679000" />
+      <workItem from="1681380184581" duration="306000" />
     </task>
     <task id="LOCAL-00017" summary="Rename Methods to Utils">
       <created>1681195113708</created>
@@ -411,7 +399,28 @@
       <option name="project" value="LOCAL" />
       <updated>1681299311664</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Finish backEnd :)">
+      <created>1681299539806</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1681299539806</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Finish backEnd :)">
+      <created>1681299609253</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1681299609253</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Finish backEnd :)">
+      <created>1681299835620</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1681299835620</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +437,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -441,7 +450,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add FlightId to addAdmin methode" />
     <MESSAGE value="add newFlight for new array and fix bug" />
     <MESSAGE value="fix bug for find null cell of flights and add to this cell" />
     <MESSAGE value="finish addAdmin" />
@@ -466,6 +474,7 @@
     <MESSAGE value="fix bookTicket part seat" />
     <MESSAGE value="add while for other switch case" />
     <MESSAGE value="add cunstructor to User class for initialize vault" />
-    <option name="LAST_COMMIT_MESSAGE" value="add cunstructor to User class for initialize vault" />
+    <MESSAGE value="Finish backEnd :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish backEnd :)" />
   </component>
 </project>
