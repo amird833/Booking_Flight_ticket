@@ -9,9 +9,9 @@ public class Print {
         System.out.println(":      WELCOME TO AIRLINE RESERVATION SYSTEM      :");
         System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::");
         System.out.println(":...................MENU OPTION...................: ");
-        System.out.println("< 1 > Sign in");
-        System.out.println("< 2 > Sign up");
-        System.out.print(">>");
+        System.out.println("\t< 1 > Sign in");
+        System.out.println("\t< 2 > Sign up");
+        System.out.print("\t>>");
         chose = input.nextInt();
         while (chose > 2 || chose < 1)
         {
