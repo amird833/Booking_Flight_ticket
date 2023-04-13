@@ -204,19 +204,19 @@ public class Print {
     public int printPartOfFlightInformation()
     {
         int chose  ;
-        System.out.println("Select number");
-        System.out.println("1- Origin");
-        System.out.println("2- Destination");
-        System.out.println("3- Date");
-        System.out.println("4- Time");
-        System.out.println("5- Price");
-        System.out.println("6- Seats");
-        System.out.print(">>");
+        System.out.println("\tSelect number");
+        System.out.println("\t< 1 > Origin");
+        System.out.println("\t< 2 > Destination");
+        System.out.println("\t< 3 > Date");
+        System.out.println("\t< 4 > Time");
+        System.out.println("\t< 5 > Price");
+        System.out.println("\t< 6 > Seats");
+        System.out.print("\t>>");
         chose = input.nextInt();
         while (chose >6 || chose < 1 )
         {
-            System.out.println("Try again!" );
-            System.out.print(">>");
+            System.out.println("\tTry again!" );
+            System.out.print("\t>>");
             chose=input.nextInt();
         }
         return chose;
